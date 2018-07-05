@@ -33,6 +33,21 @@
     font-size: normal;
 }
 
+
+/* Visualy Hidden CSS */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
 html,
 body {
     min-width: 1200px;
@@ -62,17 +77,23 @@ h2 {
     margin: 0 auto;    
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* ==========================================================================
  *  Header 
  * ========================================================================== */
 
-.main-header {
+
+.subtitle {
     width: auto;
     background-color: rgb(41, 52, 73);
     min-height: 43px;
 }
 
-/* .main-header::after {
+/* .subtitle::after {
     content: "";
     display: table;
     clear: both;
@@ -89,7 +110,6 @@ h2 {
 }
 
 .row a {
-    text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
     line-height: 17px;
@@ -118,13 +138,11 @@ h2 {
     float: left;
 }
 
-/* ============= /END Header ============================================================= */
-
 .page-header {
     padding: 47px 0 60px 0;
 }
 
-.desc {
+.description {
     width: 211px;
     font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
@@ -152,7 +170,7 @@ h2 {
     padding: 5px 0 0 10px;   
 }
 
-.tel {
+.tel a {
     font-family: "Cuprum", Arial, sans-serif;
     color: rgb(238, 54, 67);
     font-size: 21px;
@@ -172,7 +190,6 @@ h2 {
 }
 
 .user-block a {
-    text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: "Cuprum" Arial, sans-serif;
@@ -231,13 +248,21 @@ h2 {
 }
 
 .main-navigation a {
-    text-decoration: none; 
     color: rgb(255, 255, 255);
     font-size: 17px;
     line-height: 17px;
 }
 
 /* END Nav Menu */
+
+
+/* ============= /END Header ============================================================= */
+
+
+/* ==========================================================================
+ *  Main 
+ * ========================================================================== */
+
 
 /* Main Menu */
 
@@ -246,7 +271,7 @@ h2 {
     font-size: 0;
 }
 
-.main-menu .menu-item {
+.main-menu .main-menu-item {
     display: inline-block;
     box-sizing: border-box;
     width: 300px;
@@ -254,7 +279,7 @@ h2 {
     position: relative;
 }
 
-.menu-item h2 {
+.main-menu-item h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
@@ -262,11 +287,10 @@ h2 {
     padding-left: 24px;
 }
 
-.menu-item a {
+.main-menu-item a {
     font-size: 14px;
     line-height: 18px;
     font-weight: 100;
-    text-decoration: none;
     color:  rgb(255, 255, 255);
 }
 
@@ -301,7 +325,7 @@ h2 {
     margin: 0 0 20px 0;
 }
 
-.menu-item .btn {
+.main-menu-item .btn {
     width: 135px;
     height: 38px;
     position: absolute;
@@ -316,7 +340,7 @@ h2 {
     /* padding-left: 24px; */
 }
 
-.main-menu .menu-slider {
+.main-menu .main-menu-slider {
     /* display: inline-block; */
     /* box-sizing: border-box; */
     float: left;
@@ -326,11 +350,11 @@ h2 {
     
 }
 
-.menu-slider {
+.main-menu-slider {
     position: relative;
 }
 
-.menu-slider .btn {
+.main-menu-slider .btn {
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -345,29 +369,28 @@ h2 {
     font-size: 14px;
     line-height: 18px;
     font-weight: 100;
-    text-decoration: none;
     color:  rgb(255, 255, 255);
 }
 
-.menu-slider .prev-img {
+.main-menu-slider .prev-img {
     position: absolute;
     top: 116px;
     left: 25px;
 }
 
-.menu-slider .next-img {
+.main-menu-slider .next-img {
     position: absolute;
     top: 116px;
     right: 25px;
 }
 
-.menu-slider .active-dot {
+.main-menu-slider .active-dot {
     position: absolute;
     bottom: 37px;
     left: 295px;
 }
 
-.menu-slider .nonactive-dot {
+.main-menu-slider .nonactive-dot {
     position: absolute;
     bottom: 37px;
     right: 295px;
@@ -381,16 +404,16 @@ h2 {
     margin-top: 34px;
 }
 
-.popular-produsers .title-produsers,
-.popular-goods .title-goods {
+.popular-produsers .popular-produsers-title,
+.popular-goods .popular-goods-title {
     background: rgb(249, 245, 240);
     height: 88px;
     text-transform: uppercase;
     position: relative;
 }
 
-.title-produsers h2,
-.title-goods h2 {
+.popular-produsers-title h2,
+.popular-goods-title h2 {
     text-transform: uppercase;
     color: rgb(50, 66, 92);
     font-size: 30px;
@@ -400,8 +423,8 @@ h2 {
     padding: 30px 0 0 30px;
 }
 
-.title-produsers .btn,
-.title-goods .btn {
+.popular-produsers-title .btn,
+.popular-goods-title .btn {
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -417,7 +440,6 @@ h2 {
     font-size: 14px;
     line-height: 18px;
     font-weight: 100;
-    text-decoration: none;
     color:  rgb(255, 255, 255);    
 }
 
@@ -432,11 +454,10 @@ h2 {
     height: 316px;
     margin: 0 10px 0 0;
     border-top: 1px solid rgb(234, 234, 234);
-    border-bottom: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(59, 21, 21);
     /* background: red; */
     vertical-align: top;
     position: relative;
-    
 }
 
 .good-item img[width="184"] {
@@ -469,7 +490,6 @@ h2 {
 }
 
 .good-item a {
-    text-decoration: none;
     color: rgb(0, 0, 0);
     position: absolute;
     left: 32px;
@@ -477,6 +497,14 @@ h2 {
 }
 
 /* END Content Goods */
+
+
+
+
+
+/* ============= /END Main ============================================================= */
+
+
 
 Комменты ОБЯЗАТЕЛЬНО, формат - 
 /* ==========================================================================
