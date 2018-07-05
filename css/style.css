@@ -1,0 +1,490 @@
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url('../fonts/PT\ Sans\ Narrow.ttf') format(truetype);
+    font-style: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Cuprum-Bold";
+    src: url('../fonts/Cuprum-Bold.ttf') format(truetype);
+    font-style: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Cuprum-Regular";
+    src: url('../fonts/Cuprum-Regular.ttf') format(truetype);
+    font-style: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Cuprum-BoldItalic";
+    src: url('../fonts/Cuprum-BoldItalic.ttf') format(truetype);
+    font-style: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Cuprum-Italic";
+    src: url('../fonts/Cuprum-Italic.ttf') format(truetype);
+    font-style: normal;
+    font-size: normal;
+}
+
+html,
+body {
+    min-width: 1200px;
+    min-height: 1300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+    font-family: "Cuprum", "Arial", sans-serif;
+    /* background: url("../img/technomart-index.png"); */
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.container {
+    padding: 0 10px;
+    width: 940px;
+    margin: 0 auto;    
+}
+
+/* ==========================================================================
+ *  Header 
+ * ========================================================================== */
+
+.main-header {
+    width: auto;
+    background-color: rgb(41, 52, 73);
+    min-height: 43px;
+}
+
+/* .main-header::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.index-logo {
+    width: 220px;    
+    float: left;
+    margin-right: 10px;
+}
+
+.row {
+    padding: 10px 0px;
+}
+
+.row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.search {
+    width: 160px;
+    float: left;
+    margin-right: 80px;
+}
+
+.tabs {
+    width: 160px;
+    float: left;
+    margin-right: 10px;
+}
+
+.basket {
+    width: 140px;
+    float: left;
+    margin-right: 10px;
+}
+
+.ckeckout {
+    width: 150px;
+    float: left;
+}
+
+/* ============= /END Header ============================================================= */
+
+.page-header {
+    padding: 47px 0 60px 0;
+}
+
+.desc {
+    width: 211px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgb(238, 54, 67);
+    float: left;
+    margin-right: 10px;
+    padding-left: 52px;
+    padding-right: 39px;
+}
+
+.contacts {
+    float: left;
+    width: 271px;
+    margin: -3px 49px 0 8px;  
+}
+
+.adress {
+    font-family: "Cuprum", Arial, sans-serif;
+    color: rgb(50, 66, 92);
+    font-size: 14px;
+    line-height: 24px;
+    width: 271px;
+    padding: 5px 0 0 10px;   
+}
+
+.tel {
+    font-family: "Cuprum", Arial, sans-serif;
+    color: rgb(238, 54, 67);
+    font-size: 21px;
+    line-height: 18px;
+    border: 3px solid rgb(255, 255, 255);
+    padding:  11px 41px 10px 62px; 
+    /* height: 37px; */
+    width: 161px;
+    text-align: center;
+    font-weight: 100;
+    vertical-align: middle;
+}
+
+.user-block {
+    float: left;
+    margin: 0 0px 0 19px;
+}
+
+.user-block a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 21px;
+    line-height: 18px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 42px;
+}
+
+.user-block a:first-child {
+    float: left;
+    display: block;
+    width: 121px;
+    margin-right: 10px;
+    padding: 10px 25px 0 46px;
+    min-height: 42px;
+}
+
+.user-block a:last-child {
+    width: 150px;
+    padding-top: 10px
+}
+
+/* Nav Menu */
+
+.main-navigation ul {
+    list-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 0; 
+    margin-top: 40px;
+    padding-top: 20px;
+    background: rgb(50, 66, 92);
+    width: 940px;
+    box-sizing: border-box;
+    font-size: 0px;
+    border-bottom: 5px solid rgb(41, 52, 73);
+    min-height: 61px;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin: 0 12px 0 52px;
+}
+
+.main-navigation li:nth-child(3) {
+    margin: 0 8px 0 47px;
+}
+
+.main-navigation li:nth-child(5) {
+    margin: 0 9px 0 47px;
+}
+
+.main-navigation a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 17px;
+}
+
+/* END Nav Menu */
+
+/* Main Menu */
+
+.main-menu {
+    margin-top: 58px;
+    font-size: 0;
+}
+
+.main-menu .menu-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 123px;
+    position: relative;
+}
+
+.menu-item h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    padding-left: 24px;
+}
+
+.menu-item a {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+}
+
+.main-menu .materials {
+    background: rgb(255, 191, 71);
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.main-menu .materials::after {
+    background: url("img/new.png");
+    position: absolute;
+}
+
+.main-menu .instruments {
+    background: rgb(59, 188, 227);
+    margin: 0 20px 20px 0;
+}
+
+.main-menu .technique {
+    background: rgb(220, 145, 216);
+    margin: 0 0 20px 0;
+}
+
+.main-menu .discounts {
+    background: rgb(142, 215, 143);
+    margin: 0 0 20px 0;
+}
+
+.main-menu .delivery {
+    background: rgb(255, 191, 71);
+    margin: 0 0 20px 0;
+}
+
+.menu-item .btn {
+    width: 135px;
+    height: 38px;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 22px;
+    left: 24px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 2px;
+    text-align: center;
+    /* padding-left: 24px; */
+}
+
+.main-menu .menu-slider {
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
+    float: left;
+    width: 620px;
+    height: 266px;
+    margin: 0 20px 0 0;
+    
+}
+
+.menu-slider {
+    position: relative;
+}
+
+.menu-slider .btn {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(238, 54, 67);
+    width: 195px;
+    height: 39px;
+    border-radius: 3px;
+    padding: 10px 45px 10px 49px;
+    text-transform: uppercase;
+    bottom: 21px;
+    left: 26px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+}
+
+.menu-slider .prev-img {
+    position: absolute;
+    top: 116px;
+    left: 25px;
+}
+
+.menu-slider .next-img {
+    position: absolute;
+    top: 116px;
+    right: 25px;
+}
+
+.menu-slider .active-dot {
+    position: absolute;
+    bottom: 37px;
+    left: 295px;
+}
+
+.menu-slider .nonactive-dot {
+    position: absolute;
+    bottom: 37px;
+    right: 295px;
+}
+
+/* END Main Menu */
+
+/* Content Goods */
+
+.popular-goods {
+    margin-top: 34px;
+}
+
+.popular-produsers .title-produsers,
+.popular-goods .title-goods {
+    background: rgb(249, 245, 240);
+    height: 88px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title-produsers h2,
+.title-goods h2 {
+    text-transform: uppercase;
+    color: rgb(50, 66, 92);
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 100;
+    padding: 30px 0 0 30px;
+}
+
+.title-produsers .btn,
+.title-goods .btn {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(238, 54, 67);
+    width: 253px;
+    height: 39px;
+    border-radius: 3px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 25px;
+    right: 23px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    color:  rgb(255, 255, 255);    
+}
+
+.popular-goods-items {
+    margin: 20px 0 21px 0;
+}
+
+.popular-goods-items .good-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 316px;
+    margin: 0 10px 0 0;
+    border-top: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+    /* background: red; */
+    vertical-align: top;
+    position: relative;
+    
+}
+
+.good-item img[width="184"] {
+    padding: 0 19px 0 17px;
+    margin-top: 5px;
+}
+
+.good-item img[width="144"] {
+    padding: 0 49px 0 40px;
+    margin-top: 20px;
+}
+
+.good-item img[width="127"] {
+    padding: 9px 53px 0 46px;
+    margin-top: 18px;
+}
+
+.good-item:last-of-type img {
+    padding: 9px 53px 0 51px;
+    margin-top: 18px;
+}
+
+.good-item h2 {
+    color: rgb(50, 66, 92);
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.good-item a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 32px;
+    bottom: 97px;
+}
+
+/* END Content Goods */
+
+Комменты ОБЯЗАТЕЛЬНО, формат - 
+/* ==========================================================================
+ *  Header ( main BIG chapter )
+ * ========================================================================== */
+/* Header Nav Menu ( small chapter inside BIG one ) */
+//your code here
+
+/* ========================================================================== */
+вариант заканчивающего коммента:
+/* ============= /END Header ============================================================= */
