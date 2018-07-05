@@ -140,6 +140,7 @@ a {
 
 .page-header {
     padding: 47px 0 60px 0;
+    background-color: rgb(243, 247, 248);
 }
 
 .description {
@@ -444,7 +445,8 @@ a {
 }
 
 .popular-goods-items {
-    margin: 20px 0 21px 0;
+    margin: 20px 0 20px 0;
+
 }
 
 .popular-goods-items .good-item {
@@ -452,12 +454,15 @@ a {
     box-sizing: border-box;
     width: 220px;
     height: 316px;
-    margin: 0 10px 0 0;
-    border-top: 1px solid rgb(234, 234, 234);
-    border-bottom: 1px solid rgb(59, 21, 21);
+    margin: 0 16px 0 0;
+    border: 1px solid rgb(234, 234, 234);
     /* background: red; */
     vertical-align: top;
-    position: relative;
+    /* position: relative; */
+}
+
+.popular-goods-items .good-item:last-child {
+    margin: 0;
 }
 
 .good-item img[width="184"] {
@@ -480,26 +485,77 @@ a {
     margin-top: 18px;
 }
 
-.good-item h2 {
+/* .good-item h2 {
     color: rgb(50, 66, 92);
     text-align: center;
     font-size: 18px;
     line-height: 20px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
-}
+} */
 
 .good-item a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
     color: rgb(0, 0, 0);
-    position: absolute;
+    margin: 0 auto;
+    
+    /* position: absolute;
     left: 32px;
-    bottom: 97px;
+    bottom: 97px; */
+}
+
+.good-item p {
+    font-style: "PT Sans", "Arial", sans-serif;
+    line-height: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.good-item .old-price {
+    color: rgb(169, 169, 169);
+
+}
+
+.good-item .price {
+    box-sizing: border-box;
+    /* position: absolute; */
+    background: rgb(238, 54, 67);
+    width: 123px;
+    height: 39px;
+    border-radius: 3px;
+    padding: 10px 0 10px 0;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    /* bottom: 1px;
+    right: 42px; */
 }
 
 /* END Content Goods */
 
+/* Content Produsers */
+
+.produser-item {
+    display: inline-block;
+    width: 220px;
+    height: 145px;
+    border: 1px solid rgb(234, 234, 234);
+    margin: 18px 18px 0 0;
 
 
+}
+
+.produser-item:nth-child(4),
+.produser-item:nth-child(8) {
+    margin: 20px 0 0 0; 
+}
+
+/* END Content Produsers */
 
 
 /* ============= /END Main ============================================================= */
