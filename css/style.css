@@ -222,7 +222,7 @@ a {
 .user-block a {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-family: "Cuprum" Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 18px;
     float: left;
@@ -275,7 +275,7 @@ a {
 
 .main-navigation a {
     color: rgb(255, 255, 255);
-    font-family: "Cuprum" Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 17px;
     font-weight: 100;
@@ -723,39 +723,117 @@ a {
 /* ==========================================================================
  *  Footer
  * ========================================================================== */
- 
 
-.main-navigation ul {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 40px;
-    padding-top: 20px;
+
+ .main-footer .top-container {
     background: rgb(50, 66, 92);
-    width: 940px;
-    font-size: 0px;
-    height: 61px;
+    height: 190px;
 }
 
-.main-navigation li {
-    display: inline-block;
-    margin: 0 12px 0 52px;
+.top-container-left {
+    float: left;
+    width: 390px;
 }
 
-.main-navigation li:nth-child(3) {
-    margin: 0 8px 0 47px;
+.top-container-right {
+    float: right;
+    width: 550px;
 }
 
-.main-navigation li:nth-child(5) {
-    margin: 0 9px 0 47px;
-}
-
-.main-navigation a {
+.footer-index-logo p {
+    box-sizing: border-box;
+    width: 220px;
+    height: 63px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    background-color: rgb(238, 54, 67);
+    border-bottom: 5px solid rgb(181, 41, 51);
     color: rgb(255, 255, 255);
-    font-family: "Cuprum" Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-contacts {
+    float: left;
+    width: 335px;
+}
+
+.footer-contacts p {
+    color: rgb(243, 247, 249);
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 100;
 }
+
+.footer-top-navigation ul,
+.footer-bottom-navigation ul {
+    box-sizing: border-box;
+    margin-top: 40px;
+    width: 550px;
+    font-size: 0px;
+    text-align: right;
+}
+
+.footer-top-navigation li,
+.footer-bottom-navigation li {
+    display: inline-block;
+    margin: 0 59px 0 0;
+}
+
+.footer-top-navigation li:last-child,
+.footer-bottom-navigation li:last-child {
+    margin: 0 0 0 0;
+}
+
+.footer-top-navigation a,
+.footer-bottom-navigation a {
+    color: rgb(255, 255, 255);
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    text-align: right;
+}
+
+.footer-bottom-navigation a {
+    color: rgb(224, 186, 121);
+}
+
+.bottom-container {
+    background:rgb(41, 52, 73);
+}
+
+.footer-copyright,
+.footer-social,
+.footer-link {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.footer-copyright p,
+.footer-link p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.footer-link .feedback,
+.footer-link .developed {
+    display: inline-block;
+}
+
+.footer-link a {
+    color: rgb(224, 186, 121);
+}
+
+
+/* ============= /END Footer ============================================================= */
 
 
 
