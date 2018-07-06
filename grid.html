@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Float Grid */
+        .wrapper {
+            max-width: 1200px;
+            border: 1px solid #000;
+            padding: 0 15px;
+        }
+        .list {
+            border: 1px solid red;
+        }
+        /* .clearfix:before,
+        .clearfix:after { 
+            content: '';
+            display:table;
+            clear: both;
+        } */
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .item {
+            box-sizing: border-box;
+            display: inline-block; /* Inline-block Grid */
+            /* float: left; */ /* Float Grid */
+            width: 33.33%;
+            height: auto;
+            /* border: 1px solid #000; */
+            padding: 15px;
+        }
+        .item__inner {
+            border: 1px solid #000; 
+        }
+        .item__image {
+            width: 100%;
+            height: 250px;
+            border: 1px solid #000;
+        }
+
+        .item__image {
+            /* background: url('img/AEG.png') 50% 50% no-repeat;
+            background-size: cover; */
+            overflow: hidden;
+
+            position: relative;
+        }
+        .item__image img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        /* Inline-block Grid */
+        .row {
+            font-size: 0;
+        }
+        .item__text {
+            font-size: 14px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="list clearfix">
+
+            <div class="row">
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image">
+                            <img src="img/AEG.png" alt="aeg">
+                        </div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image">
+                            <img src="img/AEG.png" alt="aeg">
+                        </div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image">
+                            <img src="img/AEG.png" alt="aeg">
+                        </div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__inner">
+                        <div class="item__image"></div>
+                        <div class="item__text">Title</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--  /.list -->
+    </div><!--  /.wrapper -->
+
+</body>
+</html>
