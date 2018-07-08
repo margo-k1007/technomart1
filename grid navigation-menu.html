@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *,
+        *:after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        /* Float Grid */
+        .main-wrapper {
+            max-width: 1200px;
+            border: 1px solid red;
+            padding: 0 15px;
+        }         
+        /* .clearfix::after,
+        .clearfix::after { 
+            content: "";
+            display:table;
+            clear: both;
+        } */
+        .main-header {
+            border: 1px solid green;
+            min-height: 50px;
+            font-size: 0;
+        }
+        .logo {
+            /* float:left; */  /* Float Grid */
+            display: inline-block; /* Inline-block Grid */
+            width: 15%;
+            height: 50px;
+            border: 1px solid rgb(25, 11, 224);
+            margin: 5px 116.6px 5px 0;
+            overflow: hidden;
+            position: relative;
+            vertical-align: top;
+        }
+        .logo img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .navigation-menu {
+            /* float: left; */ /* Float Grid */
+            display: inline-block; /* Inline-block Grid */
+            width: 50%;
+            min-height: 50px;
+            border: 5px solid black;
+            margin-right: 116.6px;
+            vertical-align: top;
+        }
+        .navigation-menu ul {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        .navigation-menu li {
+            /* float: left; */ /* Float Grid */
+            display: inline-block; /* Inline-block Grid */
+            width: 20%;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 1px solid rgb(233, 11, 41);
+            text-align: center;
+            max-height: 50px;
+            font-size: 14px;
+        }
+        .search {
+            border: 1px solid rgb(11, 233, 203);
+            /* float: left; */
+            display: inline-block; /* Inline-block Grid */
+            width: 15%;
+            height: 50px;
+            margin: 5px 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        
+        <header class="main-header clearfix">
+            
+            <div class="logo">
+                <img src="img/DeWALT.png" alt="DeWALT" width="146" height="44">
+            </div>
+
+            <nav class="navigation-menu">
+                <ul class="clearfix">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                Search
+                <!-- <input type="search" placeholder="Search"> -->
+            </div>
+
+        </header>
+
+    </div>
+</body>
+</html>
