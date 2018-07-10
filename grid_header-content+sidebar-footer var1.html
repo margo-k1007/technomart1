@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *,
+        *:after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+/* ==========================================================================
+ *  Header
+ * ========================================================================== */
+
+
+        /* Float Grid */
+        .main-wrapper {
+            max-width: 1200px;
+            border: 1px solid red;
+            padding: 0 15px;
+            margin: 0 auto;
+        }         
+        .clearfix::after,
+        .clearfix::after { 
+            content: "";
+            display:table;
+            clear: both;
+        }
+        .main-header {
+            border: 1px solid green;
+            min-height: 50px;
+            font-size: 0;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+        .logo {
+            float:left;   /* Float Grid*/
+            /* display: inline-block; Inline-block Grid */
+            width: 15%;
+            height: 50px;
+            border: 1px solid rgb(25, 11, 224);
+            margin: 5px 3% 5px 0;
+            overflow: hidden;
+            position: relative;
+            vertical-align: top;
+        }
+        .logo img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .navigation-menu {
+            float: left; /* Float Grid */
+            /* display: inline-block; Inline-block Grid */
+            width: 64%;
+            min-height: 50px;
+            border: 5px solid black;
+            margin-right: 3%;
+            vertical-align: top;
+        }
+        .navigation-menu ul {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        .navigation-menu li {
+            float: left;  /* Float Grid*/
+            /* display: inline-block; Inline-block Grid */
+            width: 20%;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 1px solid rgb(233, 11, 41);
+            text-align: center;
+            max-height: 50px;
+            font-size: 14px;
+        }
+        .navigation-menu li a {
+            line-height: 50px;
+        }
+        .search {
+            border: 1px solid rgb(11, 233, 203);
+            float: left;
+            /* display: inline-block; Inline-block Grid */
+            width: 15%;
+            height: 50px;
+            margin: 5px 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+
+/* ============= /END Header ============================================================= */
+
+
+/* ==========================================================================
+ *  Main
+ * ========================================================================== */
+
+
+        #main {
+            /* width: 1200px; */
+            height: 400px;
+            padding: 15px;
+            background: rgb(201, 154, 154);
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .content {
+            float: left;
+            width: 80%;
+            height: 100%;
+            border: 1px solid #000;
+            background: rgb(119, 112, 219);
+            margin-right: 3%;
+            /* position: relative;
+            padding: 0; */
+        }
+        .sidebar {
+            float: left;
+            width: 17%;
+            height: 100%;
+            border: 1px solid #000;
+            background: rgb(121, 219, 112);
+            /* position: relative;
+            padding: 0; */
+        }
+        .sidebar p,
+        .content p {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0; */
+            text-align: center;
+            line-height: 400px;
+        }
+
+
+
+/* ============= /END Main ============================================================= */
+
+
+/* ==========================================================================
+ *  Footer
+ * ========================================================================== */
+
+
+        #footer {
+            background: rgb(193, 204, 97);
+            border: 1px solid #000;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+        #footer .logo{
+            float:left;
+            width: 15%;
+            height: 50px;
+            border: 1px solid rgb(25, 11, 224);
+            margin: 0 7.5%;
+            overflow: hidden;
+            position: relative;
+        }
+        #footer>div {
+            float: left;
+            width: 30%;
+            margin: 0 1.6%;  
+            /* background: rgb(214, 162, 113);
+            border: 1px solid #000; */
+            height: 50px;
+            position: relative;
+        }
+        .social a {
+            display: inline-block;
+            font-size: 0;
+            height: 40px;
+            width: 40px;
+            background: rgb(70, 71, 71);
+            border: 1px solid #000;  
+            opacity: 1;          
+          }
+          .social a:hover {
+              opacity: 0.5;
+          }
+          .social .social-tw {
+              background: url("img/sprite1.png") no-repeat -694px -107px;
+          }
+          .social .social-fb {
+              background: url("img/sprite1.png") no-repeat -20px -107px;
+          }
+          .social .social-sk {
+              background: url("img/sprite1.png") no-repeat -611px -107px;
+          }
+          .social .social-tw:hover {
+              background: url("img/sprite1.png") no-repeat -694px -22px;
+          }
+          .social .social-fb:hover {
+              background: url("img/sprite1.png") no-repeat -20px -22px;
+          }
+          .social .social-sk:hover {
+              background: url("img/sprite1.png") no-repeat -611px -22px;
+          }
+          .social .social-btn {
+            position: absolute;
+            height: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -85%);
+          }
+
+          .copyright p {
+            text-align: center;
+          }
+/* ============= /END Footer ============================================================= */
+
+
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        
+        <header class="main-header clearfix">
+            
+            <div class="logo">
+                <img src="img/DeWALT.png" alt="DeWALT" width="146" height="44">
+            </div>
+
+            <nav class="navigation-menu">
+                <ul class="clearfix">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                Search
+                <!-- <input type="search" placeholder="Search"> -->
+            </div>
+
+        </header><!--main-header-->
+
+        <main>
+            <div class="container clearfix" id="main">
+                <section class="content"><p>Content</p></section>
+                <aside class="sidebar"><p>Sidebar</p></aside>
+            </div>
+        </main>
+
+        <footer class="main-footer clearfix" id="footer">
+
+            <div class="logo">
+                <img src="img/DeWALT.png" alt="DeWALT" width="146" height="44">
+            </div>
+
+            <div class="social">
+                <div class="social-btn">
+                    <a href="#" class="social-tw">tw</a>
+                    <a href="#" class="social-fb">fb</a>
+                    <a href="#" class="social-sk">inst</a>
+                </div>
+            </div>
+
+            <div class="copyright"><p>&#169;"copyriht"</p></div>
+
+        </footer><!--main-footer-->
+    
+    </div><!--main-wrapper-->
+</body>
+</html>
