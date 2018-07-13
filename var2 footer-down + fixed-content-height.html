@@ -12,6 +12,13 @@
         *::before {
             box-sizing: border-box;
         }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
 
 /* ==========================================================================
  *  Header
@@ -20,7 +27,8 @@
 
         /* Float Grid */
         .main-wrapper {
-            max-width: 1200px;
+            width: 1200px;
+            height: 100%;
             border: 1px solid red;
             padding: 0 15px;
             margin: 0 auto;
@@ -28,14 +36,14 @@
         .clearfix::after,
         .clearfix::after { 
             content: "";
-            display:table;
+            display: table;
             clear: both;
         }
         .main-header {
             border: 1px solid green;
             min-height: 50px;
             font-size: 0;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             margin-top: 15px;
         }
         .logo {
@@ -112,44 +120,59 @@
  *  Main
  * ========================================================================== */
 
-
         .container {
             /* width: 1200px; */
-            height: 100%;
+            height: calc(100vh - 110px);
             padding: 15px;
             background: rgb(201, 154, 154);
             border: 1px solid #000;
-            margin-bottom: 20px;
+            padding-bottom: 95px;
         }
         .content {
             float: left;
-            width: 80%;
+            width: 69%;
             height: 100%;
             border: 1px solid #000;
             background: rgb(119, 112, 219);
             margin-right: 3%;
-            /* position: relative;
-            padding: 0; */
+            position: relative;
+            text-align: center;
+            overflow: auto;
+            padding: 10px;
         }
-        .sidebar {
+        .sidebar-1 {
             float: left;
-            width: 17%;
+            width: 10%;
             height: 100%;
             border: 1px solid #000;
             background: rgb(121, 219, 112);
-            /* position: relative;
-            padding: 0; */
+            position: relative;
+            text-align: center;
+            margin-right: 3%;
+            overflow: auto;
+            padding: 10px;
         }
-        .sidebar p,
+        .sidebar-2 {
+            float: left;
+            width: 15%;
+            height: 100%;
+            border: 1px solid #000;
+            background: rgb(121, 219, 112);
+            position: relative;
+            text-align: center;
+            overflow: auto;
+            padding: 10px;
+        }
+        /* .sidebar-1 p,
+        .sidebar-2 p,
         .content p {
-            /* position: absolute;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            margin: 0; */
+            margin: 0;
             text-align: center;
-            line-height: 400px;
-        }
+        } */
 
 
 
@@ -165,7 +188,9 @@
             background: rgb(193, 204, 97);
             border: 1px solid #000;
             padding: 15px 0;
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
+            margin-top: -80px;
+            height: 80px;
         }
         #footer .logo{
             float:left;
@@ -264,8 +289,84 @@
 
         <main id="main">
             <div class="container clearfix">
-                <section class="content"><p>Content</p></section>
-                <aside class="sidebar"><p>Sidebar</p></aside>
+                <aside class="sidebar-1"><p>Sidebar#1</p></aside>
+                <section class="content"><p>Content CSS has several different units for expressing a length.
+
+                    Many CSS properties take "length" values, such as width, margin, padding, font-size, border-width, etc.
+                    
+                    Length is a number followed by a length unit, such as 10px, 2em, etc.
+                    
+                    A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+                    
+                    For some CSS properties, negative lengths are allowed.
+                    
+                    There are two types of length units: absolute and relative.
+                    Absolute Lengths
+                    
+                    The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+                    
+                    Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.
+                    Unit 	Description
+                    cm 	centimeters
+                    mm 	millimeters
+                    in 	inches (1in = 96px = 2.54cm)
+                    px * 	pixels (1px = 1/96th of 1in)
+                    pt 	points (1pt = 1/72 of 1in)
+                    pc 	picas (1pc = 12 pt)
+                    
+                    * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+                    Relative Lengths
+                    
+                    Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.
+                    Unit 	Description 	
+                    em 	Relative to the font-size of the element (2em means 2 times the size of the current font) 	
+                    ex 	Relative to the x-height of the current font (rarely used) 	
+                    ch 	Relative to width of the "0" (zero) 	
+                    rem 	Relative to font-size of the root element 	
+                    vw 	Relative to 1% of the width of the viewport* 	
+                    vh 	Relative to 1% of the height of the viewport* 	
+                    vmin 	Relative to 1% of viewport's* smaller dimension 	
+                    vmax 	Relative to 1% of viewport's* larger dimension 	
+                    % 	Relative to the parent element
+                    CSS has several different units for expressing a length.
+
+                    Many CSS properties take "length" values, such as width, margin, padding, font-size, border-width, etc.
+                    
+                    Length is a number followed by a length unit, such as 10px, 2em, etc.
+                    
+                    A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+                    
+                    For some CSS properties, negative lengths are allowed.
+                    
+                    There are two types of length units: absolute and relative.
+                    Absolute Lengths
+                    
+                    The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+                    
+                    Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.
+                    Unit 	Description
+                    cm 	centimeters
+                    mm 	millimeters
+                    in 	inches (1in = 96px = 2.54cm)
+                    px * 	pixels (1px = 1/96th of 1in)
+                    pt 	points (1pt = 1/72 of 1in)
+                    pc 	picas (1pc = 12 pt)
+                    
+                    * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+                    Relative Lengths
+                    
+                    Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.
+                    Unit 	Description 	
+                    em 	Relative to the font-size of the element (2em means 2 times the size of the current font) 	
+                    ex 	Relative to the x-height of the current font (rarely used) 	
+                    ch 	Relative to width of the "0" (zero) 	
+                    rem 	Relative to font-size of the root element 	
+                    vw 	Relative to 1% of the width of the viewport* 	
+                    vh 	Relative to 1% of the height of the viewport* 	
+                    vmin 	Relative to 1% of viewport's* smaller dimension 	
+                    vmax 	Relative to 1% of viewport's* larger dimension 	
+                    % 	Relative to the parent element</p></section>
+                <aside class="sidebar-2"><p>Sidebar#2</p></aside>
             </div>
         </main>
 

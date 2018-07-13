@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PT Sans";
-    src: url('../fonts/PT\ Sans\ Narrow.ttf') format(truetype);
+    src: url('../fonts/PTS55F.ttf') format(truetype);
     font-style: normal;
     font-size: normal;
 }
@@ -244,7 +244,7 @@ a {
 .subtitle .checkout a {
     display: block;
     width: 130px;
-    height: 42px;
+    min-height: 42px;
     text-align: center;
     line-height: 42px;
     padding-left: 20px;
@@ -305,8 +305,8 @@ a {
 }
 
 .main-header .page-header {
-    padding: 46px 0 62px 0;
-    height: 278px;
+    padding: 46px 0 60px 0;
+    min-height: 278px;
     background-color: rgb(243, 247, 248);
     margin-bottom: 59px;
 }
@@ -408,12 +408,12 @@ a {
 
 .page-header .main-navigation a {
     display: block;
-    height: 55px;
+    min-height: 55px;
     color: rgb(255, 255, 255);
     font-size: 17px;
     line-height: 17px;
     font-weight: 100;
-    padding: 20px 31px;
+    padding: 20px 31px 18px 31px;
 }
 
 .page-header .main-navigation a:hover {
@@ -445,7 +445,7 @@ a {
 .main-menu .main-menu-item {
     display: inline-block;
     width: 300px;
-    height: 123px;
+    min-height: 123px;
     position: relative;
     margin: 0 0 20px 0;
 }
@@ -464,7 +464,7 @@ a {
     font-weight: 100;
     color:  rgb(255, 255, 255);
     width: 135px;
-    height: 38px;
+    min-height: 38px;
     position: absolute;
     bottom: 22px;
     left: 24px;
@@ -526,7 +526,7 @@ a {
 .main-menu-slider .button {
     position: absolute;
     width: 195px;
-    height: 39px;
+    min-height: 39px;
     padding: 10px 45px 10px 49px;
     text-transform: uppercase;
     bottom: 21px;
@@ -568,7 +568,7 @@ a {
 .popular-produsers .popular-produsers-title,
 .popular-goods .popular-goods-title {
     background: rgb(249, 245, 240);
-    height: 88px;
+    min-height: 88px;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 20px;
@@ -587,7 +587,7 @@ a {
 .popular-goods-title .button {
     position: absolute;
     width: 253px;
-    height: 38px;
+    min-height: 38px;
     text-align: center;
     text-transform: uppercase;
     bottom: 25px;
@@ -607,7 +607,7 @@ a {
 .popular-goods-items .good-item {
     display: inline-block;
     width: 220px;
-    height: 318px;
+    min-height: 318px;
     margin: 0 10px 0 10px;
     border: 1px solid rgb(234, 234, 234);
     vertical-align: top;
@@ -615,12 +615,12 @@ a {
 }
 
 .popular-goods-items .good-item:hover {
-    box-shadow: 0 -10px 30px -20px;
+    box-shadow: 0 5px 30px -20px;
     border: 0;
 }
 
 .catalog-goods-items .good-item:hover {
-    box-shadow: 0 -10px 30px -20px;
+    box-shadow: 0 5px 30px -20px;
     border: 0;
 }
 
@@ -696,13 +696,24 @@ a {
 
 .good-item .price {
     background: rgb(238, 54, 67);
-    width: 123px;
+    width: 141px;
     height: 38px;
     border-radius: 3px;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 12px 42px;
+    margin: 12px auto;
     line-height: 38px;
+    position: relative;
+}
+
+.good-item .price::after {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    right: -40px;
+    border: 19px solid rgb(255, 255, 255);
+    border-left-color: rgb(238, 54, 67);
 }
 
 .popular-goods-items .new::before {
@@ -731,7 +742,7 @@ a {
 .produser-item {
     display: inline-block;
     width: 220px;
-    height: 145px;
+    min-height: 145px;
     border: 1px solid rgb(234, 234, 234);
     margin: 10px;
     vertical-align: top;
@@ -747,6 +758,14 @@ a {
 .popular-produsers-items .produser-item:active {
     opacity: 0.3;
     border: 0;
+}
+
+.popular-produsers-items a {
+    display: block;
+    width: 220px;
+    height: 143px;
+    margin: 0;
+    padding: 0;
 }
 
 .produser-item img {
@@ -816,7 +835,7 @@ a {
     display: block;
     text-decoration: none;
     width: 240px;
-    height: 60px;
+    min-height: 60px;
     color: rgb(255, 255, 255);
     background-color: rgb(50, 66, 92);
     /* color: rgb(50, 66, 92); */
@@ -857,7 +876,7 @@ a {
 
 .service-credit .button {
     width: 195px;
-    height: 38px;
+    min-height: 38px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -929,7 +948,7 @@ a {
 .about-us-right .button,
 .about-us-left .button {
     width: 220px;
-    height: 38px;
+    min-height: 38px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -975,6 +994,7 @@ a {
     margin: 0;
     padding: 0;
     padding: 0 15px;
+    vertical-align: top;
 }
 
 .breadcrumbs li a {
@@ -987,17 +1007,22 @@ a {
 
 }
 
+.breadcrumbs ul li:first-child {
+    padding-left: 0;
+}
+
 .breadcrumbs ul li:first-child a {
     display: block;
     width: 15px;
     height: 14px;
     font-size: 0;
-    padding: 0;
+    padding-top: 20px;
+    margin: 0;
     background: url("../img/icon-house15-14.png") no-repeat 50% 50%;
 }
 
 .catalog-title {
-    height: 90px;
+    min-height: 90px;
     width: 940px;
     background: rgb(242, 246, 248);
     margin-bottom: 20px;
@@ -1015,7 +1040,7 @@ a {
 .catalog-row,
 .catalog-sidebar-title {
     float: left;
-    height: 37px;
+    min-height: 37px;
     width: 700px;
     background: rgb(247, 243, 236);
     margin-bottom: 20px;
@@ -1089,13 +1114,13 @@ a {
     margin: 0;
     padding: 0;
     width: 12px;
-    height: 12px;
-    background: url("../img/triangle\ 12-12grey.png");
+    min-height: 12px;
+    background: url("../img/triangle\ 12-12grey.png") no-repeat;
     position: absolute;
 }
 
 .catalog-row .sort li:nth-child(4) a {
-   top: 10px;
+   top: 12px;
    right: 40px;
 }
 
@@ -1117,22 +1142,22 @@ a {
 
 .catalog-row .sort li:nth-child(4) a:hover,
 .catalog-row .sort li:nth-child(5) a:hover {
-    background: url("../img/triangle\ 12-12black.png");
+    background: url("../img/triangle\ 12-12black.png") no-repeat;
 }
 
 .catalog-row .sort li:nth-child(4) a:active,
 .catalog-row .sort li:nth-child(5) a:active {
-    background: url("../img/triangle\ 12-12.png");
+    background: url("../img/triangle\ 12-12.png") no-repeat;
 }
 
 .catalog-goods-items {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .catalog-goods-items .good-item {
     display: inline-block;
     width: 220px;
-    height: 316px;
+    min-height: 318px;
     margin: 0 10px 20px 10px;
     border: 1px solid rgb(234, 234, 234);
     vertical-align: top;
@@ -1225,24 +1250,24 @@ a {
 }
 
 .catalog-description {
-    padding-top: 45px;
+    padding-top: 43px;
     padding-bottom: 58px;
 }
 
 .catalog-content .paginator a {
     display: inline-block;
     width: 38px;
-    height: 38px;
+    min-height: 38px;
     border: 1px solid rgb(229, 229, 229);
     text-align: center;
-    font-style: "PT Sans Narrow", "Arial", sans-serif;
+    font-style: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 38px;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     font-weight: 100;
     border-radius: 3px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     margin-right: 5px;
 }
 
@@ -1275,19 +1300,98 @@ a {
     margin-right: 20px;
 }
 
+.catalog-sidebar-title {
+    margin: 0;
+}
+
 .catalog-sidebar-content legend h3 {
     font-style: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 10px 0 14px 0;
 }
 
 .catalog-sidebar-content fieldset {
     width: 220px;
     margin: 0;
+    border: none;
+    padding: 0;
 }
 
+.range-filter {
+    width: 220px;
+    font-size: 0;
+}
+
+.range-filter-controls {
+    width: 220px;
+    height: 80px;
+    margin-bottom: 10px;
+    background: rgb(247, 243, 236);
+    border-radius: 5px;
+    padding: 39px 20px 15px 20px;
+    position: relative;
+}
+
+.range-filter-controls .scale {
+    height: 2px;
+    background: rgb(215, 220, 222);
+    
+}
+
+.range-filter-controls .scale .bar {
+    height: 2px;
+    background: rgb(0, 202, 116);
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.range-filter-controls .toggle {
+    box-sizing: content-box;
+    height: 4px;
+    width: 4px;
+    border: 8px solid rgb(255, 255, 255);
+    background: rgb(171, 171, 171);
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(88, 83, 83, 0.5);
+    cursor: pointer;
+}
+
+.range-filter-controls .toggle-min {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.range-filter-controls .toggle-max {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.range-filter .price-controls {
+    font-style: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    margin: 0 -5px;
+}
+
+.range-filter .price-controls input {
+    font-style: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 95px;
+    height: 37px;
+    background: rgb(247, 243, 236);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 10px;
+    margin: 0 6px;
+}
 
 /* END Catalog Sidebar */
 
@@ -1324,7 +1428,7 @@ a {
 .footer-index-logo a {
     display: block;
     width: 220px;
-    height: 68px;
+    min-height: 68px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 63px;
@@ -1465,7 +1569,7 @@ a {
 .footer-social a {
     display: inline-block;
     font-size: 0;
-    height: 42px;
+    min-height: 42px;
     width: 42px;
     background: rgb(33, 42, 58); 
     border-radius: 50%;

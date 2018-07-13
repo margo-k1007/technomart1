@@ -5,7 +5,7 @@
         <title>Каталог</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
     </head>
     <body>
         <div class="main-wrapper">
@@ -71,7 +71,7 @@
                                     <a href="#">Компания</a>
                                </li>
                                <li>
-                                    <a href="catalog.html">Каталог</a>
+                                    <a>Каталог</a>
                                </li>
                                <li>
                                     <a href="#">Новости</a>
@@ -110,7 +110,7 @@
                             <a class="prev-page" href="#">Инструмент</a>
                         </li>
                         <li>
-                            <a class="current-page" href="catalog.html">Перфораторы</a>
+                            <a class="current-page">Перфораторы</a>
                         </li>
                     </ul>
 
@@ -131,10 +131,20 @@
                         
                             <fieldset>
                                 <legend><h3>Цена</h3></legend>
-                                    <p><input type="range" name="price" value="1" id="price" min="0" max="3000"></p>
-                                    <div class="range">
-                                        <output class="range-out" name="down-price" id="down-price">0</output>
-                                        <output class="range-out" name="up-price" id="up-price">3000</output>
+                                    <div class="range-filter">
+
+                                        <div class="range-filter-controls">
+                                            <div class="scale">
+                                                <div class="bar"></div>
+                                            </div>
+                                            <div class="toggle toggle-min"></div>
+                                            <div class="toggle toggle-max"></div>
+                                        </div>
+
+                                        <div class="price-controls">
+                                            <label class="min-price"><input type="text" name="min-price" id="min-price" value="0"></input>&#151;</label>
+                                            <label class="max-price"><input type="text" name="max-price" id="max-price" value="30000"></intput></label>
+                                        </div>
                                     </div>
                             </fieldset>
                                 
@@ -175,10 +185,10 @@
                                             <a href="#">По функционалу</a>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="img/up" alt="up"></a>
+                                            <a href="#"></a>
                                         </li>
                                         <li> 
-                                            <a href="#"><img src="img/up" alt="up"></a>
+                                            <a href="#"></a>
                                         </li>
                                     </ul>
 
