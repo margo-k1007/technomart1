@@ -2,36 +2,87 @@
     font-family: "PT Sans";
     src: url('../fonts/PTS55F.ttf') format(truetype);
     font-style: normal;
-    font-size: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "Cuprum-Bold";
-    src: url('../fonts/Cuprum-Bold.ttf') format(truetype);
+    font-family: "PT Sans Caption";
+    src: url('../fonts/PTC75F.ttf') format(truetype);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url('../fonts/PTN57F.ttf') format(truetype);
     font-style: normal;
     font-size: normal;
 }
 
 @font-face {
-    font-family: "Cuprum-Regular";
+    font-family: "PT Sans Narrow Bold";
+    src: url('../fonts/PTN77F.ttf') format(truetype);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PT Sans Caption";
+    src: url('../fonts/PTC55F.ttf') format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url('../fonts/PTS56F.ttf') format(truetype);
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url('../fonts/PTS75F.ttf') format(truetype);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url('../fonts/PTS76F.ttf') format(truetype);
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cuprum";
     src: url('../fonts/Cuprum-Regular.ttf') format(truetype);
     font-style: normal;
-    font-size: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "Cuprum-BoldItalic";
-    src: url('../fonts/Cuprum-BoldItalic.ttf') format(truetype);
+    font-family: "Cuprum";
+    src: url('../fonts/Cuprum-Bold.ttf') format(truetype);
     font-style: normal;
-    font-size: normal;
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: "Cuprum-Italic";
+    font-family: "Cuprum";
     src: url('../fonts/Cuprum-Italic.ttf') format(truetype);
-    font-style: normal;
-    font-size: normal;
+    font-style: italic;
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: "Cuprum";
+    src: url('../fonts/Cuprum-BoldItalic.ttf') format(truetype);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 
 /* Visualy Hidden CSS */
 
@@ -78,6 +129,8 @@ body {
     line-height: 24px;
     color: rgb(0, 0, 0);
     font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 h2 {
@@ -85,12 +138,15 @@ h2 {
     line-height: 24px;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-weight: 100;
     font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 p {
     font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: 13px;
     line-height: 24px;
     color: rgb(0, 0, 0);
@@ -187,7 +243,7 @@ a {
 
 .subtitle .search form input:focus {
     background: rgb(255, 255, 255);   
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);filter: 
 }
 
 /* .subtitle .search form input:focus ::before {
@@ -912,6 +968,7 @@ a {
 
 .about-us {
     margin-bottom: 86px;
+    position: relative;
 }
 
 .about-us-left {
@@ -994,11 +1051,11 @@ a {
     margin: 0;
     padding: 0;
     padding: 0 15px;
-    vertical-align: top;
+    vertical-align: top; 
+    text-align: center;
 }
 
 .breadcrumbs li a {
-    text-align: center;
     font-size: 13px;
     line-height: 18px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1250,8 +1307,8 @@ a {
 }
 
 .catalog-description {
-    padding-top: 43px;
-    padding-bottom: 58px;
+    padding: 43px 0 58px 0;;
+
 }
 
 .catalog-content .paginator a {
@@ -1608,6 +1665,152 @@ a {
 
 
 /* ============= /END Footer ============================================================= */
+
+
+/* Modal Content */
+
+.modal-content {
+    /* display: none; */
+    width: 620px;
+    background-color: rgb(255, 255, 255);
+    border-top: 8px solid rgb(255, 82, 87);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    margin-left: -310px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);    
+    z-index: 100; 
+}
+
+.modal-content-close {
+    width: 23px;
+    height: 23px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    padding: 0;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    width: 4px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background: rgb(238, 54, 67);
+    border-radius: 2px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-content form {
+    padding: 45px 80px 37px 80px;
+    z-index: 400;
+}
+
+.modal-content form label {
+    font-size: 18px;
+    line-height: 38px;
+    float: left;
+    width: 220px; 
+}
+
+.modal-content form label:nth-child(1) {
+    margin-right: 20px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    font-style: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgb(169, 169, 169);
+    padding: 8px;
+    border: 3px solid rgb(222, 227, 228);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.modal-content form .userName,
+.modal-content form .userEmail {
+    width: 220px;
+}
+
+.modal-content form .letterText {
+    width: 460px;
+    margin-bottom: 145px;
+}
+
+.button-submit-wrapper {
+    background: rgb(244, 244, 244);
+    height: 113px;
+    width: 620px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 300;
+}
+
+.button-submit {
+    display: block;
+    background: rgb(238, 54, 67);
+    border: none;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 100;
+    color:  rgb(255, 255, 255);
+    width: 460px;
+    min-height: 38px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-align: center;
+    margin: 38px auto;
+}
+
+.button-submit:hover {
+    background: rgb(202, 44, 55);
+}
+
+.button-submit:active {
+    background: rgb(186, 39, 50);
+}
+
+.modal-content-map {
+    display: none;
+    width: 940px;    
+    height: 448px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -470px;
+    margin-top: -224px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    background: url("../img/map-popup.png") no-repeat 0 -250px; 
+    /* background: url("../img/map-popub2.png") no-repeat -100px -250px; */
+    z-index: 300;
+}
+
+.modal-content-map .modal-content-close {
+    position: fixed;
+    top: 5px;
+    right: 170px;
+
+
+/* Modal Content */
 
 
 

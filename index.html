@@ -5,7 +5,7 @@
         <title>Техномарт</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+        <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">  -->
     </head>
     <body>
         <div class="main-wrapper">
@@ -334,7 +334,31 @@
                         <img src="img/map.jpg" width="300" height="158" alt="Карта">
                         <a class="button" href="#">Заблудились? Напишите нам!</a>
                     </div>
+                    <div class="modal-content">
+                        
+                        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+                        <form class="write-us" action="#" method="POST">
+                            <label for="userName">Ваше имя:<br>
+                            <input class="userName" id="userName" type="text" placeholder="Представьтесь, пожалуйста"></label>
+                            <label for="userEmail">Ваш e-mail:<br>
+                            <input class="userEmail" id="userEmail" type="email" placeholder="Для отправки ответа"></label>
+                            <label for="letterText">Текст письма:<br>
+                            <textarea class="letterText" id="letterText" placeholder="В свободной форме" rows="5"></textarea></label>
+                            <div class="button-submit-wrapper"> 
+                            <button class="button-submit" type="submit" value="Отправить">Отправить</button>
+                            </div>
+                        </form>
+                        
+                    </div><!--modal-content-->
+
+                    <div class="modal-content-map">
+                        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+                        <div class="modal-content-map-layer1"></div>
+                        <div class="modal-content-map-layer2"></div>
+                    </div><!--modal-content-map-->
+
                 </section><!--about-us-->
+
             
             </main>
             
@@ -426,5 +450,6 @@
             </footer><!--main-footer--> 
 
         </div><!--main-wrapper-->
+
     </body>
 </html>
