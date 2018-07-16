@@ -117,12 +117,25 @@
                     </div>
             
                     <div class="main-menu-slider">
-                            <img src="img/main-image.jpg" width="620" height="266" alt="Каталог">
-                            <a class="button" href="catalog.html">открыть каталог</a>
-                            <a href="#"><img class="prev-img" src="img/prev.png" alt="prev"></a>
-                            <a href="#"><img class="next-img" src="img/next.png" alt="next"></a>
-                            <a href="#"><img class="active-dot" src="img/active-dot.png" width="10" height="10" alt="active-dot"></a>
-                            <a href="#"><img class="nonactive-dot" src="img/nonactive-dot.png" width="10" height="10" alt="nonactive-dot"></a>
+
+                        <input type="radio" id="button-1" name="toggle" checked>
+                        <input type="radio" id="button-2" name="toggle">
+
+                        <div class="slider-controls">
+                            <label id="label-for-button-1" for="button-1"></label>
+                            <label id="label-for-button-2" for="button-2"></label>
+                        </div>
+
+                        <div class="slides">
+                            <div class="slide" id="slide-1"></div>
+                            <div class="slide" id="slide-2"></div>
+                        </div>
+
+                        <a class="button slide-1-button" href="catalog.html">открыть каталог</a>
+                        <a class="button slide-2-button" href="#">открыть каталог</a>
+                        <a class="prev-slide" href="#"></a>
+                        <a class="next-slide" href="#"></a>
+            
                     </div> <!--main-menu-slider-->
             
                     <div class="main-menu-item discounts">
@@ -157,8 +170,8 @@
                                 <a class="link-tips" href="#">В закладки</a>
                             </div>
                             <h3><a href="#">Перфоратор BOSCH<br>BFG 9000</a></h3>
-                            <p class="old-price"><del>32500 P</del></p>
-                            <p class="price">25500 P</p>
+                            <p class="old-price"><del>32500 P.</del></p>
+                            <p class="price">25500 P.</p>
                         </div>
 
                         <div class="good-item">
@@ -170,8 +183,8 @@
                                 <a class="link-tips" href="#">В закладки</a>
                             </div>
                             <h3><a href="#">Перфоратор BOSCH<br>BFG 3000</a></h3>
-                            <p class="old-price"><del>22500 P</del></p>
-                            <p class="price">15500 P</p>
+                            <p class="old-price"><del>22500 P.</del></p>
+                            <p class="price">15500 P.</p>
                         </div>
 
                         <div class="good-item">
@@ -183,8 +196,8 @@
                                 <a class="link-tips" href="#">В закладки</a>
                             </div>
                             <h3><a href="#">Перфоратор BOSCH<br>BFG 6000</a></h3>
-                            <p class="old-price"><del>30500 P</del></p>
-                            <p class=" price">25500 P</p>
+                            <p class="old-price"><del>30500 P.</del></p>
+                            <p class=" price">25500 P.</p>
                         </div>
 
                         <div class="good-item new">
@@ -197,7 +210,7 @@
                             </div>
                             <h3><a href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
                             <p class="old-price"></p>
-                            <p class="price">12500 P</p>
+                            <p class="price">12500 P.</p>
                         </div>
 
                     </div><!--popular-goods-items-->
@@ -334,6 +347,7 @@
                         <img src="img/map.jpg" width="300" height="158" alt="Карта">
                         <a class="button" href="#">Заблудились? Напишите нам!</a>
                     </div>
+
                     <div class="modal-content">
                         
                         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -352,11 +366,13 @@
                     </div><!--modal-content-->
 
                     <div class="modal-content-map">
+
                         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
                         <div class="modal-content-map-layer1"></div>
                         <div class="modal-content-map-layer2"></div>
+                        
                     </div><!--modal-content-map-->
-
+                    
                 </section><!--about-us-->
 
             

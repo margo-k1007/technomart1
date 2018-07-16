@@ -56,9 +56,11 @@
                                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                             </div>
                         </div>
-                        <div class="user-block">
-                            <a href="#">Войти</a>
-                            <a href="#">Регистрация</a>
+                        <div class="user-block-login">
+                            <a class="user-block-login-name" href="#">Равшан Джамшутович</a>
+                            <a class="user-block-login-exit" href="#">Выход</a>
+                            <a class="user-block-login-links point" href="#">Мои заказы</a>
+                            <a class="user-block-login-links" href="#">Личный кабинет</a>
                         </div>
                     
                         <nav class="navigation main-navigation">
@@ -127,7 +129,7 @@
                             <h3>Фильтр</h3>
                         </div>
                                     
-                        <form class="catalog-sidebar-content" action="#" method="get" oninput="price.value">
+                        <form class="catalog-sidebar-content" action="#" method="get">
                         
                             <fieldset>
                                 <legend><h3>Цена</h3></legend>
@@ -142,28 +144,32 @@
                                         </div>
 
                                         <div class="price-controls">
-                                            <label class="min-price"><input type="text" name="min-price" id="min-price" value="0"></input>&#151;</label>
-                                            <label class="max-price"><input type="text" name="max-price" id="max-price" value="30000"></intput></label>
+                                            <label class="min-price"><input type="text" name="min-price" id="min-price" value="0">&#151;</label>
+                                            <label class="max-price"><input type="text" name="max-price" id="max-price" value="30000"></label>
                                         </div>
+
                                     </div>
+
                             </fieldset>
-                                
-                            <fieldset>
-                                <legend class="produsers"><h3>Производители:</h3></legend>
-                                    <p><label><input type="checkbox" name="BOSCH" value="BOSCH" checked>BOSCH</label></p>
-                                    <p><label><input type="checkbox" name="ИНТЕРСКОЛ" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label></p>
-                                    <p><label><input type="checkbox" name="MAKIta" value="MAKIta" checked>MAKIta</label></p>
-                                    <p><label><input type="checkbox" name="Dewalt" value="Dewalt">Dewalt</label></p>
-                                    <p><label><input type="checkbox" name="Hitachi" value="Hitachi">Hitachi</label></p>
+                                <hr>
+                            <fieldset class="produsers">
+                                <legend><h3>Производители:</h3></legend>
+                                    <p><input type="checkbox" name="bosch" id="bosch" value="bosch" checked><label for="bosch">BOSCH</label></p>
+                                    <p><input type="checkbox" name="intersckol" id="intersckol" value="intersckol"><label for="intersckol">ИНТЕРСКОЛ</label></p>
+                                    <p class="makita"><input type="checkbox" name="makita" id="makita" value="makita" checked><label for="makita">MAKIta</label></p>
+                                    <p><input type="checkbox" name="dewalt" id="dewalt" value="dewalt"><label for="dewalt">Dewalt</label></p>
+                                    <p><input type="checkbox" name="hitachi" id="hitachi" value="hitachi"><label for="hitachi">Hitachi</label></p>
                             </fieldset>
-                                
-                            <fieldset>
-                                <legend class="grours"><h3>Питание:</h3></legend>
-                                    <p><label><input type="radio" name="group-of-goods" value="Аккумуляторные">Аккумуляторные</label></p>      
-                                    <p><label><input type="radio" name="group-of-goods" value="Сетевые" checked>Сетевые</label></p>
+
+                                <hr>
+
+                            <fieldset class="groups">
+                                <legend><h3>Питание:</h3></legend>
+                                    <p><input type="radio" name="group-of-goods" id="accumulator" value="accumulator"><label for="accumulator">Аккумуляторные</label></p>      
+                                    <p><input type="radio" name="group-of-goods" id="network" value="network" checked><label for="network">Сетевые</label></p>
                             </fieldset> 
                                     
-                            <button class="button button-display" type="submit">Показать</button>
+                            <button class="catalog-sidebar-button" type="button">Показать</button>
                                     
                         </form>
                                     
@@ -208,8 +214,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 3000</a></h3>
-                                    <p class="old-price"><del>22500 P</del></p>
-                                    <p class="price">12500 P</p>
+                                    <p class="old-price"><del>22500 P.</del></p>
+                                    <p class="price">12500 P.</p>
                                 </div>
                                     
                                 <div class="good-item">
@@ -221,8 +227,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 6000</a></h3>
-                                    <p class="old-price"><del>30500 P</del></p>
-                                    <p class="price">25500 P</p>
+                                    <p class="old-price"><del>30500 P.</del></p>
+                                    <p class="price">25500 P.</p>
                                 </div>
                                     
                                 <div class="good-item new">
@@ -235,7 +241,7 @@
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
                                     <p class="old-price"></p>
-                                    <p class="price">12500 P</p>
+                                    <p class="price">12500 P.</p>
                                 </div>
                                     
                                 <div class="good-item">
@@ -247,8 +253,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 3000</a></h3>
-                                    <p class="old-price"><del>22500 P</del></p>
-                                    <p class="price">15500 P</p>
+                                    <p class="old-price"><del>22500 P.</del></p>
+                                    <p class="price">15500 P.</p>
                                 </div>
                                     
                                 <div class="good-item new">
@@ -260,8 +266,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 6000</a></h3>
-                                    <p class="old-price"><del>30500 P</del></p>
-                                    <p class="price">25500 P</p>
+                                    <p class="old-price"><del>30500 P.</del></p>
+                                    <p class="price">25500 P.</p>
                                 </div>
                                     
                                 <div class="good-item">
@@ -274,7 +280,7 @@
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
                                     <p class="old-price"></p>
-                                    <p class="price">12500 P</p>
+                                    <p class="price">12500 P.</p>
                                 </div>
                                     
                                 <div class="good-item new">
@@ -286,8 +292,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
-                                    <p class="old-price"><del>30500 P</del></p>
-                                    <p class="price">15500 P</p>
+                                    <p class="old-price"><del>30500 P.</del></p>
+                                    <p class="price">15500 P.</p>
                                 </div>
                                     
                                 <div class="good-item">
@@ -299,8 +305,8 @@
                                         <a class="link-tips" href="#">В закладки</a>
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 6000</a></h3>
-                                    <p class="old-price"><del>30500 P</del></p>
-                                    <p class="price">25500 P</p>
+                                    <p class="old-price"><del>30500 P.</del></p>
+                                    <p class="price">25500 P.</p>
                                 </div>
                                     
                                 <div class="good-item">
@@ -313,7 +319,7 @@
                                     </div>
                                     <h3><a href="#">Перфоратор BOSCH<br>BFG 2000</a></h3>
                                     <p class="old-price"></p>
-                                    <p class="price">12500 P</p>
+                                    <p class="price">12500 P.</p>
                                 </div>
                                     
                             </div><!--catalog-goods-items-->
