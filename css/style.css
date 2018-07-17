@@ -2085,23 +2085,25 @@ a {
     background-color: rgb(255, 255, 255);
     border-top: 8px solid rgb(255, 82, 87);
     color: rgb(0, 0, 0);
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 130px;
+    top: 50%;
     margin-left: -310px;
+    margin-top: -215px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);    
     z-index: 100; 
 }
 
 .modal-content-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
     width: 23px;
     height: 23px;
     border: none;
     font-size: 0;
     cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    
     background: none;
     padding: 0;
 }
@@ -2215,9 +2217,9 @@ a {
 }
 
 .modal-content-map .modal-content-close {
-    position: fixed;
-    top: 85px;
-    right: 165px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .modal-content-add-bucket {
@@ -2235,9 +2237,9 @@ a {
 }
 
 .modal-content-add-bucket .modal-content-close {
-    position: fixed;
-    top: 170px;
-    right: 325px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .modal-content-add-bucket p {
@@ -2302,8 +2304,26 @@ a {
     background: rgb(255, 255, 255);
 }
 
+@keyframes bounce {
+    0% {transform: translateY(-2000px)}
+    70% {transform: translateY(30px)}
+    90% {transform: translateY(-10px)}
+    100% {transform: translateY(0)}
+}
+
 .modal-content-show {
     display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0)}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)}
+    20%, 40%, 60%, 80% {transform: translateX(10px)}
+} 
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 
