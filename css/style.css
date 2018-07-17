@@ -2210,7 +2210,7 @@ a {
     top: 50%;
     margin-left: -470px;
     margin-top: -224px;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 30px 50px rgba(65, 42, 42, 0.7);
     background: url("../img/map-popup.png") no-repeat 0 -250px; 
     /* background: url("../img/map-popub2.png") no-repeat -100px -250px; */
     z-index: 300;
@@ -2218,8 +2218,8 @@ a {
 
 .modal-content-map .modal-content-close {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0px;
+    right: -30px;
 }
 
 .modal-content-add-bucket {
