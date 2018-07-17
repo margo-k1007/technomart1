@@ -244,7 +244,7 @@ a {
 
 .subtitle .search form input:focus {
     background: rgb(255, 255, 255);   
-    color: rgb(0, 0, 0);filter: 
+    color: rgb(0, 0, 0);
 }
 
 /* .subtitle .search form input:focus ::before {
