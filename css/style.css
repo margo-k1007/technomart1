@@ -1530,7 +1530,7 @@ a {
     opacity: 0;
 }
 
-.good-item .links .link-bay,
+.good-item .links .link-buy,
 .good-item .links .link-tips {
     display: block;
     width: 135px;
@@ -1542,7 +1542,7 @@ a {
     position: absolute;
 }
 
-.good-item .links .link-bay {
+.good-item .links .link-buy {
     color: rgb(255, 255, 255);
     line-height: 35px;
     background: rgb(99, 166, 62);
@@ -1551,7 +1551,7 @@ a {
     left: 42px;
 }
 
-.good-item .links .link-bay::before {
+.good-item .links .link-buy::before {
     content: "";
     background: url("../img/icon-bascket-1.png") no-repeat;
     position: absolute;
@@ -1562,11 +1562,11 @@ a {
     opacity: 0.5;
 }
 
-.good-item .links .link-bay:hover {
+.good-item .links .link-buy:hover {
     background-color: rgb(95, 187, 45);
 }
 
-.good-item .links .link-bay:active {
+.good-item .links .link-buy:active {
     background-color: rgb(81, 133, 52);
     line-height: 38px;
     box-shadow: none;
@@ -2216,8 +2216,8 @@ a {
 
 .modal-content-map .modal-content-close {
     position: fixed;
-    top: 5px;
-    right: 170px;
+    top: 85px;
+    right: 165px;
 }
 
 .modal-content-add-bucket {
@@ -2236,7 +2236,7 @@ a {
 
 .modal-content-add-bucket .modal-content-close {
     position: fixed;
-    top: 60px;
+    top: 170px;
     right: 325px;
 }
 
@@ -2301,6 +2301,11 @@ a {
     color:  rgb(0, 0, 0);
     background: rgb(255, 255, 255);
 }
+
+.modal-content-show {
+    display: block;
+}
+
 
 /* Modal Content */
 
