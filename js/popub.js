@@ -81,11 +81,15 @@ var buttonCloseMap = document.querySelector(".modal-content-map .modal-content-c
 
 var linkCatalog = document.querySelector(".good-item .link-buy");
 var popubCatalog = document.querySelector(".modal-content-add-bucket");
-var buttonCloseCatalog = document.querySelector(".modal-content-add-bucket .modal-content-close");      
+var buttonCloseCatalog = document.querySelector(".modal-content-add-bucket .modal-content-close"); 
+
 
     linkCatalog.addEventListener("click", function(event) {
-        event.preventDefault();
-        popubCatalog.classList.add("modal-content-show");
+        for (var i=0; i<9; i++) {
+            
+            event.preventDefault();
+            popubCatalog.classList.add("modal-content-show");
+        }
     });
 
     buttonCloseCatalog.addEventListener("click", function(event) {
