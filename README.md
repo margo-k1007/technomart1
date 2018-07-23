@@ -1,1 +1,2 @@
 # technomart1
+adaptive
