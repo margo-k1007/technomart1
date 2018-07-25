@@ -706,7 +706,9 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .page-header .contacts {
+        display: none;
+    }
 }
 
 /* Nav Menu */
@@ -799,7 +801,9 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .page-header .main-navigation {
+        width: 70%;
+    }
 }
 
 /* END Nav Menu */
@@ -1110,7 +1114,9 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .main-menu .main-menu-slider {
+        display: none;
+    }
 }
 
 /* END Main Menu */
@@ -1298,7 +1304,9 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .popular-goods-items {
+        margin: 0 25px 15px 25px;
+    }
 }
 
 
@@ -1379,7 +1387,22 @@ a {
 }
 
 @media(max-width: 320px) {
-    
+    .popular-goods .popular-goods-title,
+    .popular-produsers .popular-produsers-title {
+        width: 90%;
+        min-height: 100px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .popular-goods .popular-goods-title h2,
+    .popular-produsers .popular-produsers-title h2 {
+        padding: 0;
+    }
+    .popular-produsers-title .button,
+    .popular-goods-title .button {
+        position: static;
+        margin: 0 auto;
+    }
 }
 
 /* END Content Produsers */
@@ -1530,7 +1553,34 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .service {
+        width: 250px;
+    }
+    .service-list {
+        display: none;
+    }
+    .service-content::after {
+        display: none;
+    }
+    .service-guarantee,
+    .service-credit {
+        display: block;
+    }
+    .service-description {
+        float: none;
+        width: 250px;
+    }
+    .service-description h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .service-content {
+        padding-top: 10px;
+    }
+    .service h2 {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
 }
 
 /* END Service */
@@ -1646,7 +1696,25 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .about-us-right .button {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .about-us-left .button {
+        margin: 0 auto;
+    }
+    .about-us-title {
+        margin-bottom: 10px;  
+        padding-left: 20px;    
+    }
+    .about-us p {
+        padding-left: 20px;   
+        max-width: 300px;   
+    }
+    .about-us-left {
+        margin: 0;
+        margin-left: 10px;
+    }
 }
 
 /* END About Us */
@@ -2476,7 +2544,35 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .footer-copyright,
+    .footer-social,
+    .footer-link {
+    float: none;
+    width: 100%;
+    }
+    .bottom-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-link .feedback,
+    .footer-link .developed {
+        width: 100%;
+    }
+    .footer-top-navigation,
+    .footer-bottom-navigation {
+        display: none;
+    }
+    .footer-index-logo a {
+        margin: 0;
+    }
+    .footer-contacts {
+        float: none;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .main-footer .top-container {
+        padding-bottom: 10px;
+    }
 }
 
   
@@ -2734,22 +2830,3 @@ a {
 
 
 /* Modal Content */
-
-
-
-/* Комменты ОБЯЗАТЕЛЬНО, формат -  */
-
-
-/* ==========================================================================
- *  Header ( main BIG chapter )
- * ========================================================================== */
-/* Header Nav Menu ( small chapter inside BIG one ) */
-/*  //your code here
-
-/* ========================================================================== */
-
-
-/* вариант заканчивающего коммента: */
-
-
-/* ============= /END Header ============================================================= */
