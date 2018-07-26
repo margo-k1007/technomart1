@@ -437,7 +437,6 @@ a {
         padding-left: 60px;
     }
     .subtitle .checkout {
-        float: right;
         width: 200px;
         position: absolute;
         top: 0;
@@ -446,7 +445,56 @@ a {
 }
 
 @media(max-width: 320px) {
-
+    .subtitle .index-logo a {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        height: 42px;
+        padding: 0;
+        line-height: 42px;
+        border-bottom: 5px solid rgb(181, 41, 51);
+    }
+    .subtitle .index-logo a::after {
+        display: none;
+    }
+    .subtitle .index-logo {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .subtitle .row,
+    .subtitle .search,
+    .subtitle .tabs,
+    .subtitle .basket,
+    .subtitle .checkout {
+        display: block;
+        float: none;
+    }
+    .subtitle .row {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    .subtitle .basket,
+    .subtitle .tabs {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        width: 130px;
+    }
+    .subtitle .tabs {
+        margin-left: 20px;
+    }
+    .subtitle .checkout {
+       top: 85px;
+        margin-right: -100px;
+        right: 50%;
+       
+       
+    }
+    .subtitle .search {
+        margin: 0 auto;
+    }
 }
 
 .main-header .page-header {
@@ -1708,12 +1756,19 @@ a {
         padding-left: 20px;    
     }
     .about-us p {
-        padding-left: 20px;   
-        max-width: 300px;   
+        padding-left: 20px;  
+        width: 280px;   
     }
     .about-us-left {
         margin: 0;
         margin-left: 10px;
+        width: 90%;
+    }
+    .delivery-companies-list {
+        width: 90%;
+    }
+    .delivery-companies-list li {
+        width: 90%;
     }
 }
 
@@ -2562,8 +2617,12 @@ a {
     .footer-bottom-navigation {
         display: none;
     }
+    .top-container-left{
+        float: none;
+        width: 100%;
+    }
     .footer-index-logo a {
-        margin: 0;
+        margin: 0 auto;
     }
     .footer-contacts {
         float: none;
